@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: yellowgreen;
+    width:100%;
+    height:80px;
+}
+.manuFixed{
+    top:0;
+    left:0;
+    position: fixed;
+    transform: translateY(-100%);
+    animation-name:manuFixed;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+}
+@keyframes manuFixed {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.PreLoder{
+     position:fixed;
+     top:0;
+     left: 0;
+     background-color:white;
+     width:100%;
+     height:100%;
+     
+
+}
+
+.preLoderContant{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloderSpiner{
+    width:200px;
+    height: 200px;
+   /* background-color: rgb(243, 66, 7);*/
+    border-radius: 50%;
+    border-top:6px solid rgb(243, 66, 7);
+    border-right:6px solid transparent;
+    position: relative;
+    animation-name: preloder;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+ span{
+    display: block;
+    width:6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: red;
+    top:23px;
+    right: 22px;
+    position: absolute;
+}
+@keyframes preloder {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.backTop{
+    position: fixed;
+    background-color: red;
+    width:40px;
+    height:40px;
+    display: block;
+    float: right;
+    margin-left: 1280px;
+    margin-top:500px;
+    text-align: center;
+    line-height: 40px;
+    color:white;
+    font-size: 30px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: none;
+   
+    
+}
+.backTop .backTopButton{
+ 
+}
